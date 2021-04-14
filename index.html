@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Leaflet CDN -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+  integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+  crossorigin=""/>
+  <script defer src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+  integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+  crossorigin=""></script>
+
+  <!-- CUstom CSS -->
+  <link rel="stylesheet" href="./style/style.css">
+
+  <!-- Custom Script -->
+  <script defer src="./js/script.js"></script>
+
+  <title>Frontend Mentor | IP Address Tracker</title>
+
+</head>
+<body>
+  <div class="container">  
+
+    <!-- Header Starts -->
+    <header class="header">
+      <img src="./images/pattern-bg.png" alt="Pattern" class="header-bg">
+      <section class="header-content">
+        <h2 class="header-title">IP Address Tracker</h2>
+        <article class="header-search">
+          <form action="" class="header-search__form">
+            <input type="text" class="header-search__form--input" placeholder="Search for any IP address or domain">
+            <button class="header-search__form--submit" type="submit">
+              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="14">
+                <path fill="none" stroke="#FFF" stroke-width="3" d="M2 1l6 6-6 6"/>
+              </svg>
+            </button>
+          </form>
+        </article>
+      </section>
+    </header>
+    <!-- Header Ends -->
+
+    <!-- Main Section Starts -->
+    <main class="main">
+      <section class="ip">
+        <ul>
+          <li class="ip__address">
+            <h4>Ip Address</h4>
+            <span>465.45.987</span>
+          </li>
+          <li class="ip__location">
+            <h4>Location</h4>
+            <span>Amsterdam</span>
+          </li>
+          <li class="ip__timezone">
+            <h4>Timezone</h4>
+            <span>GMT +1000</span>
+          </li>
+          <li class="ip__isp">
+            <h4>ISP</h4>
+            <span>Unique Online</span>
+          </li>
+        </ul>
+      </section>
+      <div id="map">
+      </div>
+    </main>
+    <!-- Main secton ends -->
+
+
+
+  </div>
+</body>
+</html>
